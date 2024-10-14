@@ -1,15 +1,18 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import logoLight from "@/public/assets/logo-light.png";
-import logoDark from "@/public/assets/logo-dark.png";
-import { useTheme } from "next-themes";
+import logoImg from "@/public/assets/logo.png";
 
 const Logo = () => {
-  const { theme } = useTheme();
   return (
-    <Link href="/">
-      <Image className="h-[40px] xl:h-[50px] 2xl:h-[66px] w-auto" src={theme === "dark" ? logoDark : logoLight} alt="Mumair Logo" />
+    <Link href="/" className="flex items-center gap-3">
+      <Image
+        src={logoImg}
+        alt="Mumair Logo"
+        className="h-[40px] 2xl:h-[66px] w-auto"
+      />
+      <span className="font-logo text-3xl 2xl:text-5xl text-[#1E1E1E] dark:text-white">
+        <span className="font-bold">M</span>umair
+      </span>
     </Link>
   );
 };

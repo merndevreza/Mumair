@@ -1,4 +1,4 @@
-import ButtonPrimary from "../ButtonPrimary";
+
 import Logo from "../Logo";
 import NavigationLinks from "../NavigationLinks";
 import DarkLight from "./DarkLight";
@@ -39,7 +39,7 @@ const Header = () => {
     },
   ];
   return (
-    <div className="container mt-[40px] 2xl:mt-[60px] px-2 xl:px-0">
+    <div className="container mt-[40px] mb-[20px] 2xl:mt-[60px]">
       <div className="flex justify-between items-center ">
         <MobileHamburger paths={navLinks} className="block lg:hidden"/>
       <Logo />

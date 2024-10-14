@@ -10,6 +10,7 @@ module.exports = {
   	extend: {
 		fontFamily: {
 			primary: ["var(--font-primary)"], 
+			logo: ["var(--font-logo)"], 
 		},
   		colors: {
   			background: 'hsl(var(--background))',
@@ -45,6 +46,8 @@ module.exports = {
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
+  			offwhite: 'hsl(var(--offwhite))',
+  			footerBg: 'hsl(var(--footer-bg))',
   			 
   		},
   		borderRadius: {
@@ -58,7 +61,12 @@ module.exports = {
 		center: true,
 		screens: {
 			'2xl': '1420px',
-		 }
+		 },
+		 padding: {
+			DEFAULT: '1rem',
+			sm: '2rem',
+			lg: '4rem', 
+		 },
 	}
   },
   plugins: [require("tailwindcss-animate")],
