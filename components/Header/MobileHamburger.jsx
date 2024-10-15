@@ -9,8 +9,6 @@ import {
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import NavigationLinks from "../NavigationLinks";
-import ButtonPrimary from "../ButtonPrimary";
-import Link from "next/link";
 import DownloadCV from "./DownloadCV";
 
 const MobileHamburger = ({ paths, className }) => {
@@ -26,14 +24,15 @@ const MobileHamburger = ({ paths, className }) => {
       <SheetContent side="left">
         <SheetHeader className="text-left">
           <SheetTitle>Navigation</SheetTitle>
-          <SheetDescription>
-            <NavigationLinks
-              mobileVertical={true}
-              className="lg:hidden"
-              paths={paths}
-            />
-            <DownloadCV className="sm:hidden block w-full text-center mt-4"/>
+          <SheetDescription className="sr-only">
+            Navbar for mobile
           </SheetDescription>
+          <NavigationLinks
+            mobileVertical={true}
+            className="lg:hidden"
+            paths={paths}
+          />
+          <DownloadCV className="sm:hidden block w-full text-center mt-4" />
         </SheetHeader>
       </SheetContent>
     </Sheet>

@@ -4,7 +4,7 @@ import { Progress } from "@/components/ui/progress";
 
 const AboutSection = ({ aboutData }) => {
   return (
-    <section className="container grid lg:grid-cols-10 items-center my-[40px] xl:my-[100px] gap-12">
+    <section id="about" className="container grid lg:grid-cols-10 items-center section-padding gap-12">
       <div className="lg:col-span-4 text-center lg:text-left">
         <Image className="mx-auto" src={aboutData?.img} alt={aboutData?.alt} />
       </div>

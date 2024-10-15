@@ -60,3 +60,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.section-padding{
+  @apply pb-[70px] lg:pb-[140px]
+}

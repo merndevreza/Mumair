@@ -1,8 +1,8 @@
-
 import Logo from "../Logo";
 import NavigationLinks from "../NavigationLinks";
 import DarkLight from "./DarkLight";
 import DownloadCV from "./DownloadCV";
+import HeaderFixedTop from "./HeaderFixedTop";
 import MobileHamburger from "./MobileHamburger";
 
 const Header = () => {
@@ -39,18 +39,19 @@ const Header = () => {
     },
   ];
   return (
-    <div className="container mt-[40px] mb-[20px] 2xl:mt-[60px]">
-      <div className="flex justify-between items-center ">
-        <MobileHamburger paths={navLinks} className="block lg:hidden"/>
-      <Logo />
-      <div className="flex justify-end items-center gap-2 lg:gap-4">
-        <NavigationLinks className="hidden lg:block" paths={navLinks} />
-        <DarkLight />
-        <DownloadCV className="hidden sm:inline-block"/> 
+    <HeaderFixedTop>
+      <div className="container">
+        <div className="flex justify-between items-center ">
+          <MobileHamburger paths={navLinks} className="block lg:hidden" />
+          <Logo />
+          <div className="flex justify-end items-center gap-2 lg:gap-4">
+            <NavigationLinks className="hidden lg:block" paths={navLinks} />
+            <DarkLight />
+            <DownloadCV className="hidden sm:inline-block" />
+          </div>
+        </div>
       </div>
-      </div>
-     
-    </div>
+    </HeaderFixedTop>
   );
 };
 
