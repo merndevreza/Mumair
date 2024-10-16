@@ -1,8 +1,6 @@
 import { ThemeProvider } from "./providers/ThemeProvider";
 import "./globals.css";
-import { poppins, montserrat } from "./fonts";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+import { poppins, montserrat } from "./fonts"; 
 
 export const metadata = {
   title: "Mumair",
@@ -21,9 +19,7 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          {children}
-          <Footer />
+          {children} 
         </ThemeProvider>
       </body>
     </html>

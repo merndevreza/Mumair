@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
          </div>
           <CardTitle className="pt-6 xl:pt-[35px] ">
             <span className="xl:text-[19px] text-primary font-normal mb-2 xl:mb-5 inline-block">{project?.category}</span>
-            <h4 className="text-lg xl:text-[24px]">{project?.title}</h4> 
+            <span className="text-lg font-bold block xl:text-[24px]">{project?.title}</span> 
           </CardTitle>
         </CardHeader> 
       </Link>
